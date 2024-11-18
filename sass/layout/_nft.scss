@@ -1,0 +1,101 @@
+.nft {
+  margin: 0;
+  padding: 0;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2;
+  margin-right: 70px;
+
+  &__imagecontainer {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__data {
+    background-color: white;
+    padding: 16px;
+    margin-top: -24px;
+    position: relative;
+    margin-bottom: 65px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+  }
+
+  &__owner {
+    display: flex;
+    &-data {
+      margin-left: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  &__username {
+    color: $grey-light;
+    font-weight: 300;
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &-current {
+      color: $grey-light;
+    }
+    &-number {
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+
+  &__buttons {
+    justify-content: space-between;
+    display: flex;
+    > a.btn {
+      @include button();
+      padding: 10px 40px;
+    }
+      .view {
+        text-decoration: none;
+        background-color: transparent;
+        color: red;
+    }
+    
+    a.btn:hover {
+      color: $red;
+      background-color: white;
+    }
+  }
+
+  &__numbers {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    font-weight: 300;
+    .item {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__number {
+    color: $red;
+    font-size: 24px;
+    font-weight: 500;
+  }
+}

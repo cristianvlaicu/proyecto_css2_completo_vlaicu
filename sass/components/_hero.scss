@@ -1,0 +1,57 @@
+.hero {
+  grid-column: 1 / span 1;
+  margin-bottom: 50px;
+  padding-top: 20px;
+  h1 {
+    font-family: $font-title;
+    font-size: 50px;
+    line-height: 65px;
+    font-weight: 500;
+    padding-right: 0px;
+    span {
+      padding: 13px;
+      background-image: url("../img/nft-lazo.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position-y: 70%;
+    }
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    color: $grey-light;
+    font-weight: 300;
+    font-size: 20px;
+      span {
+        background-image: linear-gradient(to right, $red 100%, transparent 0%);
+        background-size: 100% 3px; 
+        background-position-y: 85%;
+        background-repeat: no-repeat;
+      }
+    margin-bottom: 20px;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    a.btn {
+      @include button();
+      padding: 12px 60px;
+      &:hover {
+        color: $red;
+        background-color: white;
+      }
+    }
+  
+    a.btn2 {
+      font-weight: 300;
+      color: $gris-bg;
+      display: flex;
+      align-items: center;
+      &:hover {
+        color: #fa504d;
+      }
+    }
+  }
+}

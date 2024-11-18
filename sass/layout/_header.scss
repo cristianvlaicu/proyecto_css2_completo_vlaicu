@@ -1,0 +1,52 @@
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.principal-nav {
+  margin-left: 130px;
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 46px;
+    a {
+      color: $gris-bg;
+      font-weight: 300;
+      &:hover {
+        color: #fa504d
+      }    
+    }
+  }
+}
+
+.login {
+  margin-left: 315px;
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    a {
+      color: white;
+      font-weight: 300;
+      &:hover {
+        color: #fa504d;
+        }
+  
+    }
+  }
+  .btn {
+    @include button();
+    &:hover {
+      color: #fa504d;
+      background-color: $gris-bg
+      }
+
+  }
+}

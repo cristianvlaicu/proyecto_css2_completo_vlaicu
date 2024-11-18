@@ -1,0 +1,38 @@
+.featured {
+  grid-column: 1 / span 1;
+  padding-right: 40px;
+
+  &__title {
+    font-family: $font-title;
+    margin-bottom: 20px;
+  }
+
+  &__imgs {
+    display: flex;
+    justify-content: space-between;
+    img {
+      width: 48%;
+      border: 2px solid $grey-light;
+      padding: 4px;
+    }
+    .img1{
+           transition: all 2s ease;
+
+      &:hover {
+      transform: perspective(500px) translateX(100px) translateY(-70px) translateZ(200px);
+      border: 2px solid $red;
+      border-radius: 5px;
+      }
+    }
+    .img2{
+           transition: all 2s ease;
+
+      &:hover {
+      transform: perspective(500px) translateX(-100px) translateY(-70px) translateZ(200px);
+      border: 2px solid $red;
+      border-radius: 5px;
+      }
+    }
+  }  
+}
+
